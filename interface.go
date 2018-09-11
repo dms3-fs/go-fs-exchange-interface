@@ -1,15 +1,15 @@
-// Package exchange defines the IPFS exchange interface
+// Package exchange defines the DMS3FS exchange interface
 package exchange
 
 import (
 	"context"
 	"io"
 
-	blocks "github.com/ipfs/go-block-format"
-	cid "github.com/ipfs/go-cid"
+	blocks "github.com/dms3-fs/go-block-format"
+	cid "github.com/dms3-fs/go-cid"
 )
 
-// Interface defines the functionality of the IPFS block exchange protocol.
+// Interface defines the functionality of the DMS3FS block exchange protocol.
 type Interface interface { // type Exchanger interface
 	Fetcher
 
